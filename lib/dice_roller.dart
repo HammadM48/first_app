@@ -10,11 +10,11 @@ class DiceRoller extends StatefulWidget{
     return _DiceRollerState();
   }
 }
-
+ 
 class _DiceRollerState extends State<DiceRoller>{
   final randomizer = Random();
   var currentDiceRoll = 2;
-  void rolldice() {
+  void rollDice() {
     setState((){
         currentDiceRoll = randomizer.nextInt(6) + 1;
       });
@@ -35,7 +35,7 @@ class _DiceRollerState extends State<DiceRoller>{
               height: 50,
             ),
             TextButton(
-              onPressed: rolldice,
+              onPressed: rollDice,
               style: TextButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
                 foregroundColor: Colors.white,

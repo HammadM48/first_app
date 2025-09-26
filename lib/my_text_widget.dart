@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class MyTextWidget extends StatelessWidget{
-    MyTextWidget(this.text, {super.key});
+    const MyTextWidget(this.text, {super.key});
     final String text;
     @override
     Widget build(BuildContext context) {
